@@ -206,7 +206,7 @@ C   DLATM,DLONGM: Meteorological grid spacing.
 C   NBLOCK:  No. of cells treated per block in structured calculation.
 
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 
       INTEGER  IHOUR
       INTEGER I,L,KK1,KK2,KK3,KK4,N,SECS,IM,IX,JM,NAVG,NDW,NBLK,
@@ -847,7 +847,7 @@ C
 C     PROVIDES NCELL NORMALLY DISTRIBUTED RANDOM NUMBERS
 C
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C
       REAL X(NCELL)
       REAL Q,T,V,SIGN,RANDNUM
@@ -901,7 +901,7 @@ C-                          option in the assign statement should NOT be used).
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
 C
       INTEGER MAXFIELD,NFIELDS
@@ -1204,7 +1204,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER LUN,NLEVELS
       CHARACTER*(*) FNAME
@@ -1238,7 +1238,7 @@ C-   Updated  26-JUN-1998   Bill Collins  Uses dlt tapes
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       CHARACTER SDATE*4
       INTEGER MONTH,YEAR
@@ -1324,7 +1324,7 @@ C-   Updated   4-DEC-1996   Bill Collins  Reads from combined daily file
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
 C
 C      UNITS: hPa - convert to eta
@@ -1394,7 +1394,7 @@ C-   Updated   4-DEC-1996   Bill Collins Reads from combined daily file
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER IHOUR
 C
@@ -1463,7 +1463,7 @@ C-   Updated   8-JAN-1997   Bill Collins Added cloud liquid water
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       CHARACTER SDATE*6
       INTEGER MONTH,MTH,YEAR,IHOUR,I,J,K
@@ -1508,7 +1508,7 @@ C-   Updated   8-JAN-1997   Bill Collins  Added cloud liquid water
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER NLEVELS,I,J,K,ILEV,IHOUR,LUN
       REAL M(NMETLONG,NMETLAT,NLEVELS,NHR)
@@ -1594,7 +1594,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER LUN,NLEVELS
       CHARACTER*(*) FNAME
@@ -1630,7 +1630,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-                                        use NCELL instead of MCELL
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER IPOS(5,NCELL),L
       REAL XX(NC,NCELL)
@@ -1893,7 +1893,7 @@ C-   Updated   7-AUG-1996   Bill Collins Removed 0th lat circle
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL LONG(NLONG), LAT(NLAT), LONGM(NMETLONG),
      &    LATM(NMETLAT),LONGM2(NMETLONG),LATM2(NMETLAT)
@@ -1941,7 +1941,7 @@ C-   Updated   7-AUG-1996   C.E. J.      Exact number of cells given.
 C-                                       - no longer pass MCELL
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER NNN(NLONG,MNLAT,NLEV),MCELL
       REAL POS(3,NCELL)
@@ -2066,7 +2066,7 @@ C-                                        in INTERP
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL POS(3),INTERP,T7
       REAL TL,LONGM(NMETLONG),LATM(NMETLAT)
@@ -2111,7 +2111,7 @@ C-   Updated   8-JAN-1997   Bill Collins  Added cloud liquid water
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL POS(3),LINTERP,Q7,LIQ7
       REAL QL,LONGM(NMETLONG),LATM(NMETLAT),LIQ
@@ -2159,7 +2159,7 @@ C-   Updated  30-JAN-1997  Colin Johnson Cubic interpolation in vertical.
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL X1,X2,X3
       REAL D1,D2,D3,Z
@@ -2225,7 +2225,7 @@ C-   Updated   7-AUG-1996   Bill Collins Removed 0th lat circle for met arrays
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL X1,X2,X3,X4,X5,X6,X7
       REAL DETA,D1,D2,D3
@@ -2258,7 +2258,7 @@ C-                                        U,VV to degrees/s now in VELOC.
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL POS(3),NPOS(3),V1(3),V2(3),V3(3),V4(3),V5(3),S(3)
       REAL U(NMETLONG,NMETLAT,NMETLEV,NHR+1),        ! U Component of Wind
@@ -2462,7 +2462,7 @@ C-   Created   3-OCT-1996   C.E. Johnson   From old NEWPOS
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL POS(3),V(3),ETABL
       INTEGER JCELL
@@ -2534,7 +2534,7 @@ C-   Updated  30-SEP-1996   C.E. Johnson  U,V output in degrees per second.
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL POS(3),HDIFF,VDIFF
       REAL LONGM(NMETLONG),LATM(NMETLAT),LONGM2(NMETLONG),
@@ -2638,7 +2638,7 @@ C-   Updated   7-AUG-1996   Bill Collins Removed 0th lat circle for met arrays
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K,KB,IM,JM,L,I2,MONTH,SECS,JB
       INTEGER NNN(NLONG,MNLAT,NLEV),IPOS(5,NBLOCK),NBL(NLONG,MNLAT)
@@ -2721,7 +2721,7 @@ C-   Updated  13-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C-----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C-----------------------------------------------------------------------
       INTEGER JB
       REAL DJ(NBLOCK,NDJ),DJA(NDJ,NLEV,NLONG,MNLAT,4)
@@ -2783,7 +2783,7 @@ C                                  HO2NO2 & CH3OH added
 C                                  acetone, peroxides and DMS added
 C-----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C-----------------------------------------------------------------------
       INTEGER NIT,I,J,JA,JB,K,IPOS(5,NBLOCK)
       PARAMETER(NIT=8)
@@ -7724,7 +7724,7 @@ C-                                        RC(260)-RC(262)
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,JB
       REAL RC(NBLOCK,NR),TC(NBLOCK),M(NBLOCK),H2O(NBLOCK)
@@ -9695,7 +9695,7 @@ C-   Created   7-JAN-1997   Bill Collins
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER JB
       REAL TC(NBLOCK),KE(NBLOCK,6),KH(NBLOCK,5),REUS1
@@ -9751,7 +9751,7 @@ C-                                         parameters
 C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-                                        use NCELL instead of MCELL
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER IPOS(5,NCELL),NNN(NLONG,MNLAT,NLEV)
       REAL CONC(NC,NLONG,MNLAT,NLEV),XX(NC,NCELL),D1,D2,D
@@ -9827,7 +9827,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K,L,II,JJ,ILON,JLAT,MLONG
       INTEGER NNN(NLONG,MNLAT,NLEV)
@@ -9912,7 +9912,7 @@ C-   Updated   13-JAN-1995   Bill Collins  Added parameter NCHEM
 C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-                                        use NCELL instead of MCELL
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER IPOS(5,NCELL),NCHEM
       REAL MASS(NUMCHEM,NLONG,MNLAT,NLEV),XX(NC,NCELL)
@@ -9957,7 +9957,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K,L
       INTEGER NM(NLONG,MNLAT,NLEV),NSTAT,NNN(NLONG,MNLAT,NLEV)
@@ -9993,7 +9993,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER NNN(NLONG,MNLAT,NLEV),MLEV(NLEV)
       INTEGER I,J,K,L,N
@@ -10053,7 +10053,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K,L,LL,M,NCHEM,NFLUX,N3DFLUX,MONTH,YEAR,NAVG
       INTEGER FLIST(2,NUMFLUX)
@@ -10159,7 +10159,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K,L
       REAL SDCONC(NC,NLONG,MNLAT,NLEV),
@@ -10208,7 +10208,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K,L,M,LL,NCHEM
       CHARACTER*15 CLONG(6)
@@ -10256,7 +10256,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER NM(NLONG,MNLAT,NLEV),NSTAT
       REAL MCONC(NC,NLONG,MNLAT,NLEV),SDCONC(NC,NLONG,MNLAT,NLEV)
@@ -10333,7 +10333,7 @@ C-   Updated  31-JAN-1997   Bill Collins  NH3 total added.
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL EMISS(NC,NLONG,MNLAT),NOXDAT(NLONG,MNLAT),
      &  CODAT(NLONG,MNLAT),SO2DAT(NLONG,MNLAT),DMS(NLONG,MNLAT),
@@ -10602,7 +10602,7 @@ C-                                        easier to change.
 C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K,MONTH,IC
       REAL EMISS(NC,NLONG,MNLAT)
@@ -10837,7 +10837,7 @@ C-   Updated   7-AUG-1996   Bill Collins Removed 0th lat circle for met arrays
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
 C-
       INTEGER IHR
@@ -11011,7 +11011,7 @@ C-   Updated   7-AUG-1996   Bill Collins Removed 0th lat circle for met arrays
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,K,L,JB,IM,JM,IPOS(5,NBLOCK)
       REAL DDEPO(NC,NLONG,MNLAT),DD(NBLOCK,NC),TL(NBLOCK)
@@ -11070,7 +11070,7 @@ C-   Updated  30-JUN-1998   Bill Collins  Rearrangement of logic.
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER NNN(NLONG,MNLAT,NLEV),I,J,K,NBL(NLONG,MNLAT)
       REAL ESTORE(NC,NLONG,MNLAT),EMISS(NC,NLONG,MNLAT)
@@ -11137,7 +11137,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER MONTH
       REAL EMISS(NC,NLONG,MNLAT)
@@ -11516,7 +11516,7 @@ C-                                        use NCELL instead of MCELL
 C-   Updated  30-JUN-1998   Bill Collins  Replaced NLEV with NLEV+1
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL TMASS,LMASS
 C
@@ -11543,7 +11543,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K,L,NAVG
       REAL TFLUX(NUM3DFLUX,NLONG,MNLAT,NLEV),TOTFLU(NUMFLUX),
@@ -11582,7 +11582,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER IPOS(5),HEIGHT
       REAL POS(3)
@@ -11607,7 +11607,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER N
       REAL A(N,NLONG,MNLAT,NLEV),T(N)
@@ -11646,7 +11646,7 @@ C-   Updated  25-FEB-1997   Bill Collins  Add station list
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER NFLUX,NCHEM,I,IERR,N3DFLUX,NSTATION
       INTEGER FLIST(2,NUMFLUX),CLIST(NUMCHEM)
@@ -11770,7 +11770,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,DOBAL,CLINDX
       REAL NOXBAL(18),O3BAL(18)
@@ -11955,7 +11955,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER POSUNIT,NOXUNIT,O3UNIT
       INTEGER CELLNO(NFOLLOW),K,JJ,J
@@ -12048,7 +12048,7 @@ C-   Updated  13-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL DJA(NDJ,NLEV,NLONG,MNLAT,4),
      &  C(0:NLEV),CLOUD(NLONG,MNLAT,NLEV),OZONE(NLONG,MNLAT),
@@ -12164,7 +12164,7 @@ C-                                        level is 0.997
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
 C-
       INTEGER I,II,J,K,L,M
@@ -13972,7 +13972,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-                                        use NCELL instead of MCELL
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER YEAR,MONTH,SEED2,SEED3,NFLUX,NSTAT,NAVG
       INTEGER FLIST(2,NUMFLUX)
@@ -14026,7 +14026,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-                                        use NCELL instead of MCELL
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER MONTH,SEED2,SEED3,NFLUX,YEAR,NSTAT,NAVG
       INTEGER FLIST(2,NUMFLUX),IERR
@@ -14121,7 +14121,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       DOUBLE PRECISION TIME
       REAL LAT,LONG,DAYLEN,ZEN,THET
@@ -14190,7 +14190,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K
       REAL CONC57(MNLAT,NLONG,12),CONC100(MNLAT,NLONG,12)
@@ -14233,7 +14233,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER MONTH,AMTH,DONO2
       REAL NO2EM(NLONG,MNLAT,NLEV)
@@ -14390,7 +14390,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-                          use NCELL instead of MCELL
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER IPOS(5,NCELL),I,J,K,L,M
       REAL XX(NC,NCELL),INIT(NC,NLONG,MNLAT,NLEV)
@@ -14425,7 +14425,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-                          use NCELL instead of MCELL
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER IPOS(5,NCELL),I,J,K,L,M
       REAL XX(NC,NCELL)
@@ -14472,7 +14472,7 @@ C-   Updated  29-JAN-1997  Colin Johnson Etadot interpolated by cubic function.
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,MONTH
       REAL EMISS(NC,NLONG,MNLAT),LAT(MNLAT+1),O3100(NLONG,MNLAT)
@@ -14621,7 +14621,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K
       REAL HUMID(NLONG,MNLAT,NLEV+1),P(NLEV+1),P0,ETA2P,PRESS,H2O
@@ -14663,7 +14663,7 @@ C-                                        level in ETA2
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL ETA
       REAL P0,PRESS,A
@@ -14706,7 +14706,7 @@ C-   Updated   7-AUG-1996   Bill Collins  Corrected calculation for ix<1
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER IX
       REAL X,RX,X2
@@ -14745,7 +14745,7 @@ C-                                        level in ETA2
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       REAL ETA
       REAL P0,PRESS,P2(NMETLEV),A
@@ -14792,7 +14792,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER MONTH,YEAR,I,J,K,L,ND,N
       INTEGER TRENDDAY(4)
@@ -14918,7 +14918,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K
       REAL CONC100(MNLAT,NLONG,12),CONC57(MNLAT,NLONG,12)
@@ -14966,7 +14966,7 @@ C-   Updated   7-AUG-1996   Bill Collins Removed 0th lat circle for met arrays
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K,II,JJ,N
       REAL H2OCAL,H2O,RANDNUM
@@ -15066,7 +15066,7 @@ C-   Updated   6-AUG-1996   Bill Collins  Parameters now in INCLUDE
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I
       REAL T0,P0,T(NMETLEV),U(NMETLEV),V(NMETLEV),THET(NMETLEV),TOFF1,
@@ -15208,7 +15208,7 @@ C-   Created   8-AUG-1996   Bill Collins
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER K,II,JJ,NLEVELS,I,J,I2
       REAL AISTEP,AJSTEP,FI,FJ,AREA
@@ -15268,7 +15268,7 @@ C-   Created   8-AUG-1996   Bill Collins
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER I,J,K,L
       REAL HCA(NMETLONG,NMETLAT,1,NHR),
@@ -15332,7 +15332,7 @@ C-
 C-   Created   7-AUG-1996   Bill Collins
 C-
 C----------------------------------------------------------------------
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER SEED
       IF(CRAY) THEN
@@ -15359,7 +15359,7 @@ C     Created:  28-JAN-1997  Bill Collins
 C     Modified  29-JAN-1997  Colin Johnson  For long x lat arrays.
 C-----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C
       INTEGER N,I,J
       PARAMETER(N=4)
@@ -15408,7 +15408,7 @@ C
 C     Created:  28-JAN-1997  Bill Collins 
 C-----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C
       INTEGER N
       PARAMETER(N=4)
@@ -15443,7 +15443,7 @@ C-   Created  24-FEB-1997   Bill Collins
 C-
 C----------------------------------------------------------------------
       IMPLICIT NONE
-      INCLUDE '../model_files/INOPERVM10_sensitivity_ScavHi.SOA2'
+      INCLUDE '../configs/config_sensitivity_ScavHi.SOA2'
 C----------------------------------------------------------------------
       INTEGER NSTATION,N,I,J,IM,JM,ICODE,MONTH,YEAR,CLIST(NUMCHEM),NCHEM
       REAL XX(NC,NCELL),POS(3,NCELL),STLON(NUMSTAT),STLAT(NUMSTAT),
