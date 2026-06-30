@@ -12,8 +12,8 @@ This repository contains
 - Auxiliary model files called by the run scripts, including emissions and chemical fields. These can be found in the `model_files` directory.
 - Config files for each model run script, setting (for example) output directories. These files are found in the `configs` directory. 
 - Empty output directories for each of the sensitivity runs, contained in `outputs`. 
-- Python code used to read in model outputs, such as global budgets and 4D flux and concentration fields. This is found in `analyse.py`
-- The box model used to estimate indirect global warming potentials in the study, written in Python. This is found in `box_model.py`. 
+- Python code used to read in model outputs, such as global budgets and 4D flux and concentration fields. This is found in `analyse.py`.
+- The box model used to estimate indirect global warming potentials in the study, written in Python. This is found in `box_model.py`, and reads in model configuration data from `species_data.json`. 
 
 In order to run the model, the meteorological data used to drive the model needs to be downloaded and unzipped from its Zenodo repository, as it's too big for GitHub. This should be extracted into a directory called `stochem_met`. 
 
