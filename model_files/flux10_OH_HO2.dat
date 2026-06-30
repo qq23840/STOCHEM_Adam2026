@@ -1,0 +1,87 @@
+HFO1234yf+OH->TFA                       532  1
+cHFO1225ye+OH->TFA                      533  1
+tHFO1225ye+OH->TFA                      534  1
+cHFO1233zd+OH->TFA                      535  1
+tHFO1233zd+OH->CF3CHO                   536  1
+cHFO1234ze+OH->TFA                      537  1
+tHFO1234ze+OH->CF3CHO                   538  1
+cHFO1336mz+OH->CF3CHO                   539  1
+tHFO1336mz+OH->TFA                      540  1
+cHFO1318my+OH->TFA                      541  1
+tHFO1318my+OH->TFA                      542  1
+HFO1243zf+OH->TFA                       543  1
+HFO1438ez+OH->TFA                       544  1
+HFO1233xf+OH->TFA                       545  1
+HFO1216+OH->TFA                         546  1
+cHFO1233zd+O3->P                        547  1
+tHFO1233zd+O3->P                        548  1
+cHFO1234ze+O3->TFA                      549  1
+cHFO1233zd+O3->CF3H                     550  1
+tHFO1233zd+O3->CF3H                     551  1
+cHFO1234ze+O3->CF3H                     552  1
+tHFO1234ze+O3->CF3H                     553  1
+cHFO1336mz+O3->CF3H                     554  1
+tHFO1336mz+O3->CF3H                     555  1
+tHFO1234ze+O3->TFA                      556  1
+cHFO1336mz+O3->TFA                      557  1
+HFO1243zf+O3->CF3H                      558  1
+tHFO1336mz+O3->TFA                      559  1
+HFO1243zf+O3->TFA                       560  1
+HFO1216+O3->CF4                         561  1
+CF4+OH->P                               562  1
+CHF3+OH->CF3+H2O                        563  1
+CHF3+O(1D)->CF3+OH                      564  1
+CF3Cl+OH->P                             565  1
+CF3Cl+O(1D)->P                          566  1
+CF3CHFCF3+OH->P                         567  1
+TFA+OH->P                               568  1
+HFO1216+O3->TFA                         569  1
+HFO1233xf+O3->TFA                       570  1
+HFO1233xf+O3->CF3Cl                     571  1
+HFO1438ez+O3->TFA                       572  1
+HFO1438ez+O3->CF3CHFCF3                 573  1
+tHFO1318my+O3->TFA                      574  1
+tHFO1318my+O3->CH4                      575  1
+cHFO1318my+O3->TFA                      576  1
+cHFO1318my+O3->CH4                      577  1
+tHFO1225ye+O3->TFA                      578  1
+tHFO1225ye+O3->CH4                      579  1
+cHFO1225ye+O3->TFA                      580  1
+cHFO1225ye+O3->CH4                      581  1
+HFO1234y+O3->TFA                        582  1
+HFO1234y+O3->CH4                        583  1
+HFC143a+OH->CF3CHO                      584  1
+HFC236fa+OH->CF3CHO                     585  1
+HFC245fa+OH->CF3CHO                     586  1
+HFC365mfc+OH->CF3CHO                    587  1
+HCFC133a+OH->CF3CHO                     588  1
+HFC245fa+OH->P                          589  1
+HFC365mfc+OH->P                         590  1
+HCFC133a+OH->P                          591  1
+CF3CHO+OH->P                            592  1
+CF3CHO->CF3H+CO                         697  1
+CF3CHO->P                               698  1
+HFO1234yf emission                     1030  1
+cHFO1225ye emission                    1031  1
+tHFO1225ye emission                    1032  1
+cHFO1233zd emission                    1033  1
+tHFO1233zd emission                    1034  1
+cHFO1234ze emission                    1035  1
+tHFO1234ze emission                    1036  1
+cHFO1336mz emission                    1037  1
+tHFO1336mz emission                    1038  1
+cHFO1318my emission                    1039  1
+tHFO1318my emission                    1040  1
+HFO1243zf emission                     1041  1
+HFO1438ez emission                     1042  1
+HFO1233xf emission                     1043  1
+HFO1216 emission                       1044  1
+HFC143a emission                       1051  1
+HFC236fa emission                      1052  1
+HFC245fa emission                      1053  1
+HFC365mfc emission                     1054  1
+HCFC133a emission                      1055  1
+CF3CHO dry dep                         1350  1
+CF3CHO wet dep                         1650  1
+CF3CHO+HO2->CF3CHO2HO                   593  1
+CF3CHO2HO->CF3CHO+HO2                   594  1
