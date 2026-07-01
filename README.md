@@ -15,7 +15,7 @@ This repository contains
 - Python code used to read in model outputs, such as global budgets and 4D flux and concentration fields. This is found in `analyse.py`.
 - The box model used to estimate indirect global warming potentials in the study, written in Python. This is found in `box_model.py`, and reads in model configuration data from `species_data.json`. 
 
-In order to run the model, the meteorological data used to drive the model needs to be downloaded and unzipped from its Zenodo repository (doi: 10.5281/zenodo.21100197), as it's too big for GitHub. This should be extracted into a directory called `stochem_met`. 
+In order to run the model, the meteorological data used to drive the model needs to be in a directory called `stochem_met`. This data is not published here and is available on request from the authors. 
 
 ### Warning
 
@@ -23,7 +23,7 @@ This model was originally developed in the early 1990s and has been developed in
 
 ### Compiling and Running
 
-Before compiling or running, ensure the output directory stated in the relevant `INOPERVM10_*` file 
+Before compiling or running, ensure the output directory stated in the relevant `config` file 
 
 The model was compiled using the Intel-OneAPI ifx compiler, using:
 
