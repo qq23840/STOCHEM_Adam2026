@@ -35,12 +35,12 @@ The spin-up year was run using
 
 ```
 # the model asks for the year (97), month (1), day (1) and run length in days (365)
-printf '97\n1\n1\n365\n' | ./sensitiviy_base.o
+printf '97\n1\n1\n365\n' | ./sensitivity_base.o
 ```
 Once the model run has completed, the output files `stoch3d.bud`, `stoch3d.dat`, `stoch3d.out`, `stoch3d.sta` and `stoch3d.tot` were deleted from the output directory, and the `DUMP.BIN` file was renamed to `RESTART.BIN`. Then, the model was re-run for the analysis year using
 
 ```
-printf '98\n1\n1\n365\n' | ./sensitiviy_base.o
+printf '98\n1\n1\n365\n' | ./sensitivity_base.o
 ```
 
 ### References
