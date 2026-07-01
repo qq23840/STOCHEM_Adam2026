@@ -44,3 +44,12 @@ printf '98\n1\n1\n365\n' | ./sensitiviy_base.o
 ```
 
 ### References
+
+1. Collins, W. J., Stevenson, D. S., Johnson, C. E., & Derwent, R. G. (1997). Tropospheric Ozone in a Global-Scale Three-Dimensional Lagrangian Model and Its Response to NOx Emission Controls. Journal of Atmospheric Chemistry, 26(3), 223–274. https://doi.org/10.1023/A:1005836531979
+2. Derwent, R. G., Jenkin, M. E., Stevenson, D. S., Utembe, S. R., Khan, A. H., & Shallcross, D. E. (2025). Influence of the oxidation of non-methane volatile organic compounds on tropospheric hydrogen: A STOCHEM-CRI global Lagrangian model study. Atmospheric Environment, 352, 121214. https://doi.org/10.1016/j.atmosenv.2025.121214
+3. Derwent, R. G., Stevenson, D. S., Doherty, R. M., Collins, W. J., & Sanderson, M. G. (2008). How is surface ozone in Europe linked to Asian and North American NOx emissions? Atmospheric Environment, 42(32), 7412–7422. https://doi.org/10.1016/j.atmosenv.2008.06.037
+4. Holland, R., Khan, M. A. H., Chhantyal-Pun, R., Orr-Ewing, A. J., Percival, C. J., Taatjes, C. A., & Shallcross, D. E. (2020). Investigating the Atmospheric Sources and Sinks of Perfluorooctanoic Acid Using a Global Chemistry Transport Model. Atmosphere, 11(4), 407. https://doi.org/10.3390/atmos11040407
+5. Holland, R., Khan, M. A. H., Driscoll, I., Chhantyal-Pun, R., Derwent, R. G., Taatjes, C. A., Orr-Ewing, A. J., Percival, C. J., & Shallcross, D. E. (2021). Investigation of the Production of Trifluoroacetic Acid from Two Halocarbons, HFC-134a and HFO-1234yf and Its Fates Using a Global Three-Dimensional Chemical Transport Model. ACS Earth and Space Chemistry, 5(4), 849–857. https://doi.org/10.1021/acsearthspacechem.0c00355
+6. Khan, M. a. H., Jenkin, M. E., Foulds, A., Derwent, R. G., Percival, C. J., & Shallcross, D. E. (2017). A modeling study of secondary organic aerosol formation from sesquiterpenes using the STOCHEM global chemistry and transport model. Journal of Geophysical Research: Atmospheres, 122(8), 4426–4439. https://doi.org/10.1002/2016JD026415
+7. Khan, M. A. H., Lyons, K., Chhantyal-Pun, R., McGillen, M. R., Caravan, R. L., Taatjes, C. A., Orr-Ewing, A. J., Percival, C. J., & Shallcross, D. E. (2018). Investigating the Tropospheric Chemistry of Acetic Acid Using the Global 3-D Chemistry Transport Model, STOCHEM-CRI. Journal of Geophysical Research: Atmospheres, 123(11), 6267–6281. https://doi.org/10.1029/2018JD028529
+
